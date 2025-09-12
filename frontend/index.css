@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #444d5f;
+    color: #fff;
+}
+html, body{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2f3541;
+    padding: 20px 10px;
+    color: #ff9800;
+    font-size: 18px;
+  
+}
+
+hr{
+    border: none;
+    border-top: 2px solid #333;
+    margin: 10px auto;
+}
+
+
+.search{
+    
+    display: flex;
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    
+  
+}
+input[type ="search"]{
+    flex: 1;
+    padding: 15px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    
+   
+    
+}
+.btn{
+    
+    padding:15px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color:  #ff9900;
+    color: #121212;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+button:hover{
+    color: #fff;
+    background-color: #333;
+}
+
+
+.info{
+    background-color: #3c4353;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 90%;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hourly-wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.scroll-btn{
+     transition: all 0.3s ease;
+      background: #ff9800;
+      height: 100px;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+
+.hourly-container{
+   
+    display: flex;
+    overflow-x: auto;
+    gap:5px;
+    
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    flex: 1;
+}
+.hourly-container::-webkit-scrollbar{
+    display: none;
+}
+.hour-card{
+    
+    place-content: center;
+    min-width: 50px;
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    scroll-snap-align: start;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.days-widget-container{
+  display:flex;
+  justify-content:center; /* center on large screens */
+  padding:16px;
+}
+
+.days-widget{
+  display:flex;
+  justify-content:flex-start; /* align items horizontally */
+  gap:8px;
+  overflow-x:auto; /* horizontal scroll on small screens */
+  padding-bottom:4px; /* for scrollbar space */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+}
+
+.day{
+  flex:0 0 auto; /* do not shrink, keep width based on content */
+  background:rgba(255,255,255,0.05);
+  color:#e6eef6;
+  border:none;
+  border-radius:8px;
+  padding:10px 16px;
+  cursor:pointer;
+  transition:0.2s;
+  font-weight:600;
+  white-space:nowrap; /* prevent text wrapping */
+}
+
+.day:hover{
+  background:rgba(96,165,250,0.2);
+  transform:translateY(-2px);
+}
+
+.day.active{
+  color: #3c4353;
+  background:#ff9800;
+}
+
+/* optional: hide scrollbar for clean look */
+.days-widget::-webkit-scrollbar{
+  height:4px;
+}
+.days-widget::-webkit-scrollbar-thumb{
+  background:rgba(96,165,250,0.4);
+  border-radius:2px;
+}
+.days-widget::-webkit-scrollbar-track{
+  background:transparent;
+}
+
+
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    color: #ff9900;
+
+}

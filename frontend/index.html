@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>WheatherX</title>
+</head>
+<body>
+
+<header>
+    <div id="logo" class="head">
+        WheatherX
+    </div>
+    <div id="icon"><img src="icon.png" style="width: 24px; height: 24px;"></div>
+    
+</header>
+
+    <main>
+
+      
+        <div class="info">
+              <div class="search">
+            <input type="search"  placeholder="Enter city name" id="search-input">
+            <button id="search-btn" type="submit" class="btn" >Search</button>
+        </div>
+        <div id="msg" style="padding: 10px; text-align: center; color: lime;">status: online</div>
+            <strong><p>Location:  <span id="city"></span></p></strong>
+            <hr>
+         
+            
+            <p >Latitude: <span id="lat"></span></p> 
+             <p>Longitude: <span id="long"></span></p> 
+            <hr>
+         
+           <p >current status: <span id="status"></span></p> 
+            <p >Temperature: <span id="temp">0</span>&deg;C</p> 
+             <p>Wind speed: <span id="wind">0</span>Km/h</p> 
+        </div>
+
+        
+           
+       
+          <div class="info">
+            <strong><p>Forecast(Hourly/7 days)</strong>
+            <hr>
+                   <div class="days-widget-container">
+  <div class="days-widget">
+    <button class="day active" data-day="0">N/A<hr style=" border-top: 2px solid #3c4353;">N/A</button>
+    <button class="day" data-day="1">N/A<hr style=" border-top: 2px solid #3c4353;">N/A</button>
+    <button class="day" data-day="2">N/A<hr style=" border-top: 2px solid #3c4353;">N/A</button>
+    <button class="day" data-day="3">N/A<hr style=" border-top: 2px solid #3c4353;">N/A</button>
+    <button class="day" data-day="4">N/A<hr style=" border-top: 2px solid #3c4353;">N/A</button>
+    <button class="day" data-day="5">N/A<hr style=" border-top: 2px solid #3c4353;">N/A</button>
+    <button class="day" data-day="6">N/A<hr style=" border-top: 2px solid #3c4353;">N/A</button>
+  </div>
+</div>
+<div class="hourly-wrapper">
+  <button class="scroll-btn left">&#10094;</button>
+
+         <div class="hourly-container" id="forecast">
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  <div class="hour-card"><span id="hour">00:00</span><br><hr style=" border-top: 2px solid #3c4353;"><span id="tmp">N/A</span><hr style=" border-top: 2px solid #3c4353;"><span id="stats">N/A</span></div>
+  
+</div>
+
+  <button class="scroll-btn right">&#10095;</button>
+</div>
+
+        </div>
+
+
+
+
+      
+
+
+
+    </main>
+    <footer>
+<div class="foot">&copy;WheatherX 2025</div>
+    </footer>
+    <script src="scroll.js"></script>
+      <script src="api.js"></script>
+</body>
+</html>
