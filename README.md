@@ -16,6 +16,10 @@ This project uses the **Open-Meteo** APIs (no API key required) and performs cit
   
 
 ---
+## 📜 License
+This project is open source and free to use.
 
+
+---
 
 
