@@ -13,7 +13,7 @@ This project uses the **Open-Meteo** APIs (no API key required) and performs cit
 - Display **current weather**: temperature, status, wind speed, city & country
 - **7-day strip** (clickable day buttons) populated from `daily` data
 - **Hourly forecast** for the selected day (00:00 → 23:00)
-- 
+  
 
 ---
 
