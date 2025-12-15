@@ -20,7 +20,3 @@ document.querySelectorAll(".day").forEach(btn => {
   });
 });
 
-function fetchWeatherForDay(dayIndex){
-  // Example: use your existing API function to fetch data for this day
-  // Then update your existing weather card
-}
