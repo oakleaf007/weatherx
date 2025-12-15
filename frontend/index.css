@@ -127,21 +127,21 @@ button:hover{
 }
 .days-widget-container{
   display:flex;
-  justify-content:center; /* center on large screens */
+  justify-content:center; 
   padding:16px;
 }
 
 .days-widget{
   display:flex;
-  justify-content:flex-start; /* align items horizontally */
+  justify-content:flex-start;
   gap:8px;
-  overflow-x:auto; /* horizontal scroll on small screens */
-  padding-bottom:4px; /* for scrollbar space */
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+  overflow-x:auto; 
+  padding-bottom:4px; 
+  -webkit-overflow-scrolling: touch; 
 }
 
 .day{
-  flex:0 0 auto; /* do not shrink, keep width based on content */
+  flex:0 0 auto; 
   background:rgba(255,255,255,0.05);
   color:#e6eef6;
   border:none;
@@ -150,7 +150,7 @@ button:hover{
   cursor:pointer;
   transition:0.2s;
   font-weight:600;
-  white-space:nowrap; /* prevent text wrapping */
+  white-space:nowrap; 
 }
 
 .day:hover{
@@ -163,7 +163,7 @@ button:hover{
   background:#ff9800;
 }
 
-/* optional: hide scrollbar for clean look */
+
 .days-widget::-webkit-scrollbar{
   height:4px;
 }
